@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { WHATSAPP_LINK } from "@/lib/services-data"
 
 const highlights = [
-  "Over 10 years of professional experience",
+  "Over 5 years of professional experience",
   "Premium quality products only",
   "Personalized styling consultations",
   "Welcoming and relaxing atmosphere",
@@ -12,8 +12,8 @@ const highlights = [
 ]
 
 const stats = [
-  { icon: Users, value: "5,000+", label: "Happy Clients" },
-  { icon: Award, value: "10+", label: "Years Experience" },
+  { icon: Users, value: "2,000+", label: "Happy Clients" },
+  { icon: Award, value: "5+", label: "Years Experience" },
   { icon: Heart, value: "100%", label: "Satisfaction Rate" },
   { icon: Clock, value: "6", label: "Days a Week" },
 ]
