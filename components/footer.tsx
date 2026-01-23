@@ -110,7 +110,7 @@ export function Footer() {
       href="https://technopickltd.com"
       target="_blank"
       rel="noopener noreferrer"
-      className="hover:text-background transition"
+      className="text-sky-400 hover:text-sky-500 transition"
     >
       Technopick Ltd
     </a>
