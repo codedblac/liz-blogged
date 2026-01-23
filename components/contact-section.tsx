@@ -2,7 +2,7 @@ import { MapPin, Phone, Clock, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const WHATSAPP_LINK =
-  "https://wa.me/254700000000?text=Hello%20Liz%20Hairstylist%2C%20I%20would%20like%20to%20book%20an%20appointment"
+  "https://wa.me/2547722241321?text=Hello%20Liz%20Hairstylist%2C%20I%20would%20like%20to%20book%20an%20appointment"
 
 const contactInfo = [
   {
@@ -13,7 +13,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+254 700 000 000"],
+    details: ["+254 722 241 321"],
   },
   {
     icon: Clock,
@@ -70,7 +70,7 @@ export function ContactSection() {
           <div className="relative">
             <div className="rounded-3xl overflow-hidden h-full min-h-[400px]">
               <img
-                src="/placeholder.svg?height=600&width=800"
+                src="/fulani.jpg"
                 alt="Liz Hairstylist Salon Interior"
                 className="w-full h-full object-cover"
               />

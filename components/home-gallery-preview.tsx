@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 const galleryImages = [
   { src: "/stunning-african-braids-hairstyle-woman.jpg", alt: "Beautiful braided hairstyle" },
   { src: "/elegant-gel-nails-african-woman-manicure.jpg", alt: "Elegant gel nails" },
-  { src: "/natural-hair-twist-out-african-woman.jpg", alt: "Natural twist out style" },
+  { src: "/6.jpeg", alt: "Natural twist out style" },
   { src: "/artistic-nail-art-design-salon.jpg", alt: "Artistic nail art" },
 ]
 

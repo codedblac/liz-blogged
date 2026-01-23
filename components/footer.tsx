@@ -87,7 +87,7 @@ export function Footer() {
             <div className="space-y-2 text-sm text-background/70">
               <p>Hurlingham, Nairobi</p>
               <p>Kenya</p>
-              <p>+254 700 000 000</p>
+              <p>+254722241321</p>
               <p className="pt-2">
                 <span className="text-background/50">Hours:</span>
                 <br />

@@ -3,7 +3,7 @@
 import { MessageCircle } from "lucide-react"
 
 const WHATSAPP_LINK =
-  "https://wa.me/254700000000?text=Hello%20Liz%20Hairstylist%2C%20I%20would%20like%20to%20book%20an%20appointment"
+  "https://wa.me/254722241321?text=Hello%20Liz%20Hairstylist%2C%20I%20would%20like%20to%20book%20an%20appointment"
 
 export function WhatsAppButton() {
   return (

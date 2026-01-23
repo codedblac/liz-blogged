@@ -23,14 +23,14 @@ export function HomeAboutPreview() {
                   className="w-full h-48 object-cover rounded-2xl"
                 />
                 <img
-                  src="/luxury-hair-salon-interior-nairobi.jpg"
+                  src="/6.jpeg"
                   alt="Salon interior"
                   className="w-full h-32 object-cover rounded-2xl"
                 />
               </div>
               <div className="pt-8">
                 <img
-                  src="/happy-african-woman-beautiful-hairstyle-salon-resu.jpg"
+                  src="/1.jpeg"
                   alt="Happy client"
                   className="w-full h-72 object-cover rounded-2xl"
                 />

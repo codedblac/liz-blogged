@@ -30,19 +30,19 @@ export function AboutContent() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <img
-                    src="/african-hairstylist-working-on-client-hair-salon.jpg"
+                    src="/5.jpeg"
                     alt="Stylist at work"
                     className="w-full h-48 object-cover rounded-2xl"
                   />
                   <img
-                    src="/luxury-hair-salon-interior-nairobi.jpg"
+                    src="/african-braiding-protective-styles-salon.jpg"
                     alt="Salon interior"
                     className="w-full h-48 object-cover rounded-2xl"
                   />
                 </div>
                 <div className="pt-8">
                   <img
-                    src="/happy-african-woman-beautiful-hairstyle-salon-resu.jpg"
+                    src="/7.jpeg"
                     alt="Happy client"
                     className="w-full h-80 object-cover rounded-2xl"
                   />
