@@ -104,6 +104,18 @@ export function Footer() {
           <p className="text-background/50 text-sm">
             © {new Date().getFullYear()} Liz Hairstylist. All rights reserved.
           </p>
+<p className="text-background/40 text-xs mt-2">
+    Designed & Developed by{" "}
+    <a
+      href="https://technopickltd.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-background transition"
+    >
+      Technopick Ltd
+    </a>
+  </p>
+
         </div>
       </div>
     </footer>
