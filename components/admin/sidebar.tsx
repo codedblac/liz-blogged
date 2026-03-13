@@ -26,7 +26,7 @@ const navigation = [
   { name: "Tags", href: "/admin/tags", icon: Tags, roles: ["admin", "editor", "author"] },
   { name: "Media", href: "/admin/media", icon: Image, roles: ["admin", "editor", "author"] },
   { name: "Comments", href: "/admin/comments", icon: MessageSquare, roles: ["admin", "editor"] },
-  { name: "Users", href: "/admin/users", icon: Users, roles: ["admin"] },
+  // { name: "Users", href: "/admin/users", icon: Users, roles: ["admin"] },
   { name: "SEO", href: "/admin/seo", icon: Search, roles: ["admin", "editor"] },
   { name: "Settings", href: "/admin/settings", icon: Settings, roles: ["admin"] },
 ]
@@ -44,7 +44,7 @@ export function AdminSidebar({ userRole }: AdminSidebarProps) {
         {/* Logo */}
         <div className="flex h-16 items-center border-b border-border px-6">
           <Link href="/admin" className="flex items-center gap-2">
-            <span className="font-serif text-xl font-bold text-primary">Glow</span>
+            <span className="font-serif text-xl font-bold text-primary">Liz</span>
             <span className="text-xs text-muted-foreground">Admin</span>
           </Link>
         </div>
