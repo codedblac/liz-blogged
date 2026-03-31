@@ -115,7 +115,17 @@ export function Footer() {
       Technopick Ltd
     </a>
   </p>
-
+<p className="text-background/40 text-xs mt-2">
+    Designed & Developed by{" "}
+    <a
+      href="https://technopickltd.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-sky-400 hover:text-sky-500 transition"
+    >
+      Technopick Ltd
+    </a>
+  </p>
         </div>
       </div>
     </footer>
