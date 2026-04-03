@@ -15,29 +15,59 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'No file provided' }, { status: 400 })
     }
 
-    const allowedTypes = ['image/jpeg','image/png','image/webp','image/gif','image/svg+xml']
+    // Only allow common image types
+    const allowedTypes = [
+      'image/jpeg',
+      'image/png',
+      'image/webp',
+      'image/gif',
+      'image/svg+xml',
+    ]
     if (!allowedTypes.includes(file.type)) {
       return NextResponse.json({ error: 'Invalid file type' }, { status: 400 })
     }
 
+    // Generate unique filename
     const timestamp = Date.now()
     const ext = file.name.split('.').pop()
-    const filename = `blog/${timestamp}.${ext}`
+    const filename = `blog/${timestamp}-${Math.random().toString(36).substring(2, 8)}.${ext}`
 
-    const { data, error } = await supabase.storage
+    // Upload file to 'media' bucket under blog/
+    const { error: uploadError } = await supabase.storage
       .from('media')
-      .upload(filename, file)
+      .upload(filename, file, { cacheControl: '3600', upsert: false })
 
-    if (error) throw error
+    if (uploadError) throw uploadError
 
-    const { data: url } = supabase.storage
+    // Get public URL
+    const { data: urlData } = supabase.storage
       .from('media')
       .getPublicUrl(filename)
 
-    return NextResponse.json({ url: url.publicUrl })
+    const publicUrl = urlData.publicUrl
 
+    // Get current user if logged in
+    const {
+      data: { user },
+    } = await supabase.auth.getUser()
+
+    // Save file info to media table
+    const { error: dbError } = await supabase
+      .from('media')
+      .insert({
+        user_id: user?.id || null,
+        file_name: file.name,
+        file_path: publicUrl, // Save full public URL
+        file_type: file.type,
+        file_size: file.size,
+        created_at: new Date().toISOString(),
+      })
+
+    if (dbError) console.error('DB insert error:', dbError)
+
+    return NextResponse.json({ url: publicUrl })
   } catch (error) {
-    console.error(error)
+    console.error('Upload error:', error)
     return NextResponse.json({ error: 'Upload failed' }, { status: 500 })
   }
 }
